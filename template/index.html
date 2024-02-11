@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='audiorecorder.js') }}"></script>
+   
+</head>
+<body>
+   
+    <div class = "holder">
+        
+        <div class ="titlescreen">
+            <div class="ascii-art">
+                               ┌────┐
+                ┌──────────────┴────┴──────────────┐
+                │                                  │
+                │  ┌────────────────────────────┐  │
+                │  │                            │  │
+                │  │   ┌──────┐      ┌──────┐   │  │
+                │  │   │      │      │      │   │  │
+                │  │   ├────┬─┤      ├─┬────┤   │  │
+                │  │   │    │ │      │ │    │   │  │  Mr. Helpsworth
+                │  │   └────┴─┘      └─┴────┘   │  │
+                │  │            ┌──┐            │  │
+                │  └────────────┴──┴────────────┘  │
+                │                                  │
+                └──────────────┬────┬──────────────┘
+                               │    │
+                               │    │
+                              ┌┴────┴┐
+                              │      │
+                              └──────┘
+
+                </div>
+                <div class="ascii-text" id = "maintext">        
+                    What is my role? 
+        
+                    Am I an assistant chef?
+                    A personal tutor?
+                    A motivational coach? 
+                    
+                    I can be anything for you!
+                </div>
+        </div>
+
+        <div data-role="controls">
+            <textarea id="robotTask" onfocus="this.value=''" >Answer here</textarea>
+            <textarea id="extraInfo" onfocus="this.value=''" >Answer here2</textarea>
+            <textarea id="talkBox" onfocus="this.value=''" >Talk here</textarea>
+            
+            <button id="textModeButton">Via Text</button>
+            <button id="audioModeButton">Via Audio</button>
+           
+
+            <button id="nextButton">Submit</button>
+            <button id="talkButton">Send</button>
+            <button id="recordButton">Record Voice</button>
+        </div>
+        <footer>Made by: Carlo Escudero, Hyde Harris, Nathanial Schultz, Travis Lloyd</footer>
+           
+       
+    </div>
+    
+    <div class="overlay"></div>
+  
+</body>
+</html>
