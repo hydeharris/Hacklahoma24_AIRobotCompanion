@@ -6,7 +6,7 @@ Mr. Helpsworth is an AI-powered chatbot companion. His core responses are genera
 
 The retro-terminal-inspired web page was developed on the front end in pure HTML, CSS, and JavaScript and deployed by a Flask backend server. Audio is recorded on the front end through JavaScript MediaRecorder, and the text/audio inputs are sent to the backend for processing. 
 
-# Setup
+# Setup:
 Before accessing the included APIs, a `.env` file containing the following keys must be added to the file structure. 
 ```OPENAI_API_KEY=XXXXXX```
 ```ELEVENLABS_API_KEY=XXX```
